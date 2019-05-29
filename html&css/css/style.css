@@ -151,6 +151,32 @@ article#main-col{
     margin-top:10px;
 }
 
+article#main-col h1{
+    font-size: 55px;
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+article#main-col .about-me{
+    overflow: hidden
+}
+
+article#main-col #main-col-about-img{
+    float:left; 
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+}
+
+article#main-col #main-col-about-content{
+    text-align: justify; 
+    padding-left:20px;
+}
+
+#main-col-about-img{
+    margin-top:20px;
+}
+
 /* Footer */
 footer{
     margin-top: 20px;
@@ -174,6 +200,7 @@ footer{
         padding: 15px;
         text-align: center;
     }
+
 }
 
 /* Media - Mobile */
