@@ -11,20 +11,33 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script> -->
     </head>
     <body>
-        <header>
-            <div class='container'>
-                <div id='branding'>
-                    <h1>The <span class='highlight'>Art</span> of Wine</h1>
-                </div>
+        <!-- <header> -->
                 <nav>
-                    <ul>
-                        <li><a href='./index.html'>Home</a></li>
-                        <li><a class='current' href='./about.html'>About</a></li>
-                        <li><a href='#'>Careers</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                        <div class='container'>
+                            <div id='branding'>
+                                <h1>The <span class='highlight'>Art</span> of Wine</h1>
+                            </div>
+                            <!-- <div id='nav-menu'> -->
+                            <ul>
+                                <li><a href='./index.html'>Home</a></li>
+                                <li><a class='current' href='./about.html'>About</a></li>
+                                <li>
+                                    <a href='#'>Wines</a>
+                                    <div class='nav-content'>
+                                        <div class='nav-sub'>
+                                            <ul>
+                                                <li><a href='#'>Red wine</a></li>
+                                                <li><a href='#'>White wine</a></li>
+                                                <li><a href='#'>Sparkling wine</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+                    </nav>
+                    <!-- </header> -->
 
         <section id='showcase'>
                 <div class='container'>
@@ -37,7 +50,7 @@
                 <h1>Subscribe to our Newsletter</h1>
                 <form>
                     <input type='email' placeholder="Enter Email..."/>
-                    <button type='submit' class='btn_1'>Subscribe</button>
+                    <button type='submit' class='btn_subscribe'>Subscribe</button>
                 </form>
             </div>
         </section>
@@ -65,7 +78,14 @@
         </section>
 
         <footer>
-            <p>Kevin Web Design, Copyright &copy; 2019</p>
+            <div id='footer-out-container'>
+                <div class='footer-content'>
+                    <p>Copyright &copy; 2019 Kev Web Design Reserved</p>
+                </div>
+                <div class='footer-content'>
+    
+                </div>
+            </div>
         </footer>
     </body>
 </html>
