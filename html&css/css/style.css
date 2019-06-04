@@ -30,96 +30,99 @@ body{
 }
 
 /* Nav **/
-nav{
+.navMenu{
+    width:100%;
+    height:60px;
     background: #35424a;
     color:#ffffff;
     padding-top:30px;
     min-height:55px;
     border-bottom:#e8491d 3px solid;
-    height:55px;
 }
 
-nav a{
-    color:#ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size:16px;
-}
-
-nav li{
-    display:inline;
-    padding:0 20px 0 20px;
-}
-
-nav #branding{
+.navMenu #branding{
     float:left;
+    margin-left:10%;
 }
 
-nav #branding h1{
+.navMenu #branding h1{
     margin:0;
 }
 
-nav ul{
-    float: right;
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-
-nav ul li a{
-    display:inline-block;
-}
-
-.nav-content{
-    position: absolute;
-    top: 85px;
-    right:4%;
-    overflow:hidden;
-    background-color: #35424a;
-    color:#ffffff;
-    border-top: #e8491d 3px solid;
-    max-height: 0;
-}
-
-
-.nav-sub ul{
-    padding:0;
-    margin:0;
-    list-style-type: none;
-}
-
-.nav-sub ul li{
-    display:block;
-}
-
-.nav-sub ul li a{
-    display: inline-block;
-    padding:5px 0;
-}
-
-nav ul li a:focus ~ .nav-content{
-    max-height:400px;
-}
-
-nav .highlight, nav .current a{
+.navMenu .highlight{
     color: #e8491d;
     font-weight: bold;
 }
 
-nav a:hover{
-    color:#cccccc;
-    font-weight:bold;
+nav ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    position:relative;
+    float:right;
+    width:30%;
+    text-align: center;
 }
 
-nav .current{
-    color:#e8491d;
-    font-weight:bold;
+nav .current {
+    background-color: #e8491d;
+    font-weight: bold;
+}
+
+ul li{
+    display:inline-block;
+}
+
+ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+}
+
+ul li:hover{
+    background:#e8491d;
+}
+
+/*sub menu*/
+ul ul{
+    position:absolute;
+    min-width: 100px;
+    background:#35424a;
+    display:none;
+}
+
+ul ul li{
+    display:block;
+    background:#35424a;
+}
+
+
+ul li:hover ul{
+    display:block;
+}
+
+/*burger*/
+.burger{
+    cursor: pointer;
+    background:#35424a;
+    color:#ffffff;
+    font-size:24px;
+    padding:0.6em;
+    display:none;
+}
+
+.burger div{
+    width:35px;
+    height:3px;
+    background-color:#ffffff;
+    margin:5px;
 }
 
 /* Showcase **/
 #showcase{
     min-height:400px;
-    background:url('../img/Winery-blog-header-image.jpg') no-repeat 0 -400px;
+    background:url('../img/Winery-blog-header-image3.jpg') no-repeat 0 -400px;
     text-align: center;
     color:#ffffff;
 }
@@ -224,15 +227,32 @@ footer{
 footer #footer-out-container{
     margin:auto;
     width:79%;
+    overflow: hidden;
 }
 
 footer .footer-content{
-    width:50%;
+    width:48%;
     text-align: left;
+    float:left;
+}
+
+#social{
+    height:52px;
+}
+
+#social a img{
+    float: right;
+    margin:8px 15px 8px 0px;
+    width:30px;
+    height:30px;
 }
 
 /* Media - Web */
 @media screen and (max-width: 1125px){
+    #showcase{
+        background:url('../img/responsive/pad/Winery-blog-header-image3.jpg') no-repeat 0 -100px;
+    }
+
     .container{
         width:90%;
         margin:auto;
@@ -245,19 +265,11 @@ footer .footer-content{
         padding: 15px;
         text-align: center;
     }
-
-    .nav-content{
-        right:0;
-    }
 }
 
 /* Media - Pad */
 @media screen and (max-width: 850px){
-    .container{
-        width: 80%;
-    }
 
-    nav #branding,
     #newsletter h1,
     #newsletter form,
     #articles .article,
@@ -268,14 +280,32 @@ footer .footer-content{
         width:100%;
     }
 
-    nav ul,
-    nav ul li{
-        float:none;
-        text-align: center;
+    .navMenu #branding{
+        margin-left:10%;
     }
 
-    nav{
-        padding-bottom:20px;
+    .burger{
+        display:block;
+        margin-top:-3px;
+        width:40px;
+    }
+
+    nav ul{
+        display:none;
+        position: absolute;
+        top:93px;
+        background:#35424a;
+        width:100%;
+        opacity:0.9;
+    }
+
+    ul li{
+        display:block;
+    }
+
+    ul ul{
+        position:static;
+        background:#35424a;
     }
 
     #newsletter button{
@@ -287,20 +317,11 @@ footer .footer-content{
         width:100%;
         margin-bottom: 15px;
     }
-
-    .nav-content{
-        top:105px;
-        right: 20%;
-    }
-
-    .nav-content ul li{
-        text-align: center;
-    }
 }
 
 /* Media - Phone */
-@media screen and (max-width: 450px){
-    .nav-content{
-        right: 0;
+@media(max-width:458px){
+    .navMenu #branding{
+        margin-left:15%;
     }
 }

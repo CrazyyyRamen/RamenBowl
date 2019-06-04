@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font:15px/1.5 Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color:#f4f4f4;
+}
+
+nav{
+    width:100%;
+    height:60px;
+    background: #35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:55px;
+    border-bottom:#e8491d 3px solid;
+}
+
+nav #branding{
+    float:left;
+    margin-left:10%;
+}
+
+nav #branding h1{
+    margin:0;
+}
+
+nav ul{
+    float:right;
+    width:25%;
+    text-align: center;
+}
+
+nav ul li{
+    float:left;
+    list-style: none;
+    position: relative;
+    width:100px;
+}
+
+nav ul li a{
+    display:block;
+    color:#fff;
+    padding: 0px 25px;
+    font-size:18px;
+    text-decoration:none;
+}
+
+nav .highlight{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+nav .current {
+    background-color: #e8491d;
+    font-weight: bold;
+    border-radius:4px;
+}
+
+nav ul li a:hover{
+    background-color:#e8491d;
+    border-radius:4px;
+}
+
+nav ul li ul{
+    display:none;
+    position:absolute;
+    background-color:#35424a;
+    opacity:0.9;
+    border-radius: 0px 0px 4px 4px;
+    width:100%;
+    text-align: center;
+    padding:7px;
+}
+
+nav ul li:hover ul{
+    display:block;
+}
+
+nav ul li ul li a{
+    padding: 10px 14px;
+    
+}
+
+nav ul li ul li a:hover{
+    background-color:#e8491d;
+    border-radius:4px;
+}
+
+.burger{
+    float:right;
+    display:none;
+    cursor: pointer;
+}
+
+.burger div{
+    width:35px;
+    height:3px;
+    background-color:#ffffff;
+    margin:5px auto;
+}
+
+@media screen and (max-width:1200px){
+    nav ul{
+        width:39%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+
+    nav ul{
+        position:absolute;
+        right:0px;
+        height:52vh;
+        top:10vh;
+        background:#35424a;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:40%;
+        transform: translate(100%);
+        transition:transform 0.5s ease-in;
+    }
+
+    nav ul li{
+        opacity:0;
+        margin:auto;
+    }
+
+    .burger{
+        display:block;
+        width:40%;
+    }
+}
+
+.nav-active{
+    transform: translate(0%);
+}
+
+nav ul li:hover{
+    background-color:#e8491d;
+    border-radius:4px;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}

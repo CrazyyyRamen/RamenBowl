@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+        <title>
+            HTML & CSS Practice | Top Menu 2
+        </title>
+        <link rel='stylesheet' href='./css/menu2.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600">
+        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+
+    <body>
+        <div class='navMenu'>
+            <div id='branding'>
+                <h1>The <span class='highlight'>Art</span> of Wine</h1>
+            </div>
+            <nav>
+                <ul class='nav-links'>
+                    <li><a class='current' href='index.html'>Home</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li>
+                        <a href='#'>Wines</a>
+                        <ul>
+                            <li><a href="./wine/redwine.html">Red</a></li>
+                            <li><a href="./wine/whitewine.html">White</a></li>
+                            <li><a href="./wine/sparklingwine.html">Sparkling</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class='burger'>
+                    <div class='line1'></div>
+                    <div class='line2'></div>
+                    <div class='line3'></div>
+                </div>
+            </nav>
+        </div>
+
+        <script type='text/javascript'>
+            $("nav .burger").click(function() {
+                $(".nav-links").slideToggle();
+                $(".nav-links ul").css("display", "none");
+            });
+
+            $(".nav-links li").click(function(){
+                // $(".nav-links ul").slideUp();
+                $(this).find("ul").slideToggle();
+            });
+
+            $("nav ul li").focusout(function(){
+                $("nav ul").css("display", "none");
+            })
+
+            $(window).resize(function() {
+                if($(window).width() > 768){
+                    $("ul").removeAttr("style");
+                }
+            });
+        </script>
+    </body>
+</html>
