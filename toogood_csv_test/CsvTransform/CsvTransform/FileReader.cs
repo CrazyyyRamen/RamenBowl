@@ -16,7 +16,12 @@ namespace CsvTransform
             // read all the content from standard csv
             string[] standardLines = File.ReadAllLines(@standardPath);
             // read all the content from custom csv
-            string[] customLines = File.ReadAllLines(@customPath);
+            string[] customLines = new string[0];
+            if(!string.IsNullOrEmpty(customPath))
+            {
+                customLines = File.ReadAllLines(@customPath);
+            }
+            
 
             // i=1  skip the header
             Dictionary<string, string> dictStandard = new Dictionary<string, string>();
