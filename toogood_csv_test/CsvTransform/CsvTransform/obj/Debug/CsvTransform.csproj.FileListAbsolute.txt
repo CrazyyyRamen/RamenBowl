@@ -1,0 +1,6 @@
+D:\RamenBowl\RamenBowl\toogood_csv_test\CsvTransform\CsvTransform\bin\Debug\CsvTransform.exe.config
+D:\RamenBowl\RamenBowl\toogood_csv_test\CsvTransform\CsvTransform\bin\Debug\CsvTransform.exe
+D:\RamenBowl\RamenBowl\toogood_csv_test\CsvTransform\CsvTransform\bin\Debug\CsvTransform.pdb
+D:\RamenBowl\RamenBowl\toogood_csv_test\CsvTransform\CsvTransform\obj\Debug\CsvTransform.csprojResolveAssemblyReference.cache
+D:\RamenBowl\RamenBowl\toogood_csv_test\CsvTransform\CsvTransform\obj\Debug\CsvTransform.exe
+D:\RamenBowl\RamenBowl\toogood_csv_test\CsvTransform\CsvTransform\obj\Debug\CsvTransform.pdb
