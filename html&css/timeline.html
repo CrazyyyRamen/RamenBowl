@@ -6,8 +6,9 @@
         <meta name='description' content="This is Xiyu Wang's portfolio website">
         <meta name='keywords' content='Xiyu Web Deverloper Full-stack'>
         <title>
-            Kevin's Work Exp
+            Kevin's Timeline
         </title>
+        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
         <link rel='stylesheet' href='./css/portfolio.css'>
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     </head>
@@ -15,11 +16,17 @@
         <header>
             <a class="header-brand" href="home">K.Wang</a>
             <nav>
-                <ul>
+                <ul class='nav-links'>
                     <li><a href="portfolio">Portfolio</a></li>
-                    <li class="current"><a href="timeline">TimeLine</a></li>
+                    <li><a class="current" href="timeline">TimeLine</a></li>
                     <li><a href="./download/portfolio/Xiyu's Resume_2019.pdf" download="Xiyu's Resume">Resume</a></li>
                 </ul>
+
+                <div class='burger'>
+                    <div class='line1'></div>
+                    <div class='line2'></div>
+                    <div class='line3'></div>
+                </div>
             </nav>
         </header>
 
@@ -162,5 +169,7 @@
                 </div>
             </footer>
         </div>
+
+        <script type='text/javascript' src='./js/profile.js'></script>
     </body>
 </html>
