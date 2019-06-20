@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+$tooltipHide: none;
+$tooltipShow: block;
+
+body{
+    margin:0;
+    padding:0;
+
+    header{
+        text-align:center;
+        margin-bottom:250px;
+    }
+
+    .halfcol{
+        width:50%;
+        float:left;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .tooltips{
+        margin:20px auto;
+
+        span{
+            position: relative;
+            width:150px;
+            background: black;
+            color:white;
+            text-align:center;
+            border-radius:6px;
+            padding: 8px 5px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        span:after{
+            content:'';
+            width:10px;
+            height:10px;
+            background: black;
+            position:absolute;
+            top:26px;
+            left:50px;
+            z-index: -1;
+            transform:translate(-50%) rotate(45deg);
+        }
+    }
+
+    .tooltipsleft, .tooltipsright{
+        width:50%;
+        text-align: center;
+    }
+
+    .tooltipsleft{
+        float:left;
+    }
+
+    .tooltipsright{
+        float:right;
+    }
+
+    .hideTooltip{
+        display: $tooltipHide;
+    }
+    
+    .showTooltip{
+        display: $tooltipShow;
+    }
+}
+
+
+
