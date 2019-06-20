@@ -9,25 +9,26 @@ import { Component } from '@angular/core';
 export class ButtonComponents{
     aMsg: string = 'This is A Button';
     bMsg: string = 'This is B Button';
-    isATooltipHide: string = 'hideTooltip';
-    isBTooltipHide: string = 'hideTooltip';
+
+    isATooltipHide: boolean = false;
+    isBTooltipHide: boolean = false;
 
     ABtnClick(){
-        this.isBTooltipHide = 'hideTooltip';
+        this.isBTooltipHide = false;
+        this.isATooltipHide = !this.isATooltipHide;
 
-        this.isATooltipHide = this.isATooltipHide === 'hideTooltip' ? 'showTooltip' : 'hideTooltip';
         // console.log('A: ' + this.isATooltipHide + '; B: ' + this.isBTooltipHide);
     }
 
     BBtnClick(){
-        this.isATooltipHide = 'hideTooltip';
+        this.isATooltipHide = false;
+        this.isBTooltipHide = !this.isBTooltipHide;
 
-        this.isBTooltipHide = this.isBTooltipHide === 'hideTooltip' ? 'showTooltip' : 'hideTooltip';
         // console.log('A: ' + this.isATooltipHide + '; B: ' + this.isBTooltipHide);
     }
 
     HideTooltip(){
-        this.isATooltipHide = 'hideTooltip';
-        this.isBTooltipHide = 'hideTooltip';
+        this.isATooltipHide = false;
+        this.isBTooltipHide = false;
     }
 }

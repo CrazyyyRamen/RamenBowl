@@ -1,4 +1,4 @@
 <div class='row'>
-    <div class='tooltips tooltipsleft {{aTooltipState}}'><span>{{aMessage}}</span></div>
-    <div class='tooltips tooltipsright {{bTooltipState}}'><span>{{bMessage}}</span></div>
+    <div *ngIf="aTooltipState" class='tooltips tooltipsleft'><span>{{aMessage}}</span></div>
+    <div *ngIf="bTooltipState" class='tooltips tooltipsright'><span>{{bMessage}}</span></div>
 </div>
