@@ -1,0 +1,12 @@
+<h1>Posts</h1>
+<ul>
+    <li *ngFor="let post of posts$">
+        <a href="">{{post.title}}</a>
+
+        <ul>
+            <li>
+                <p>{{post.body}}</p>
+            </li>
+        </ul>
+    </li>
+</ul>
