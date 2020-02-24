@@ -1,0 +1,16 @@
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\LoginAPI.deps.json
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\LoginAPI.runtimeconfig.json
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\LoginAPI.runtimeconfig.dev.json
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\LoginAPI.dll
+D:\Leisure time work\LoginAPI\LoginAPI\bin\Debug\netcoreapp2.2\LoginAPI.pdb
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.csprojAssemblyReference.cache
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.RazorAssemblyInfo.cache
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.RazorAssemblyInfo.cs
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.AssemblyInfoInputs.cache
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.AssemblyInfo.cs
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.RazorTargetAssemblyInfo.cache
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.dll
+D:\Leisure time work\LoginAPI\LoginAPI\obj\Debug\netcoreapp2.2\LoginAPI.pdb
