@@ -1,8 +1,0 @@
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\bin\Debug\netstandard2.0\EFDataAccessLibrary.deps.json
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\bin\Debug\netstandard2.0\EFDataAccessLibrary.dll
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\obj\Debug\netstandard2.0\EFDataAccessLibrary.csprojAssemblyReference.cache
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\obj\Debug\netstandard2.0\EFDataAccessLibrary.AssemblyInfoInputs.cache
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\obj\Debug\netstandard2.0\EFDataAccessLibrary.AssemblyInfo.cs
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\bin\Debug\netstandard2.0\EFDataAccessLibrary.pdb
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\obj\Debug\netstandard2.0\EFDataAccessLibrary.dll
-D:\Leisure time work\EFDemoWeb\EFDataAccessLibrary\obj\Debug\netstandard2.0\EFDataAccessLibrary.pdb
